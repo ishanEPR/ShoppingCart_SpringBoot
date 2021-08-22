@@ -1,8 +1,7 @@
 package com.example.ShoppingCart.model;
 
 import javax.persistence.Entity;
-
-import org.springframework.data.annotation.Id;
+import javax.persistence.Id;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
