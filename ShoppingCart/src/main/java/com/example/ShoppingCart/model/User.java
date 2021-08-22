@@ -2,6 +2,8 @@
 
 import javax.persistence.Entity;
 
+import org.springframework.data.annotation.Id;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,8 +13,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
-	long id;
-	String name,email,password,
+	
+	@Id
+	private long id;
+	private String name,email,password,
 	created_at,
 	login_token,
 	type,
